@@ -1,0 +1,23 @@
+.back{
+    background-image:url("../../assets/courses_bg.png");
+}
+.jack{
+    color: yellow;
+}
+.jack:hover
+{
+    color: aqua;
+}
+.fa{
+    color: white;
+}
+.fa:hover{
+    color: aquamarine;
+}
+.fab{
+    color: white;
+}
+.fab:hover
+{
+    color: aquamarine;
+}

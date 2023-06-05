@@ -1,0 +1,30 @@
+.live-stats-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.live-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title{
+    color: grey;
+    margin-top:1px;
+}
+
+.plus{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 2px;
+}

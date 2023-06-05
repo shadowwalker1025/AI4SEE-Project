@@ -1,0 +1,26 @@
+.title:hover
+{
+  color: rgba(0, 255, 238, 0.304);
+  cursor: pointer;
+}
+.change{
+    margin-top: 30px;
+}
+.change:hover{
+    background-color: rgb(57, 57, 136);
+    color: white;
+}
+.mar{
+    margin-bottom: 20px;
+   
+
+}
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to display */
+    -webkit-box-orient: vertical;
+
+  }
+  
