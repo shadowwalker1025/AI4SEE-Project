@@ -12,9 +12,7 @@ function About() {
         </div>
       </div>
       <div className="m-5 p-5">
-        <div>
-          <h1 className="text-dark text-center">Our Team Members </h1>
-        </div>
+        <div></div>
       </div>
       <Footer />
     </div>

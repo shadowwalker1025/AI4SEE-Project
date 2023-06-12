@@ -8,9 +8,12 @@ import { faTypo3 } from "@fortawesome/free-brands-svg-icons";
 function Nav() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [showDropdowns, setShowDropdowns] = useState(false);
+  const handleToggleDropdowns = () => {
+    setShowDropdowns(!showDropdowns);
+  };
   const handleViewDetails = () => {
-    navigate("/banner");
+    navigate("/");
   };
 
   const handleSignIn = () => {
@@ -24,9 +27,7 @@ function Nav() {
   const handlecontact = () => {
     navigate("/about/form");
   };
-  const handlefeature = () => {
-    navigate("/about/features");
-  };
+
   const handleroot = () => {
     navigate("/");
   };
@@ -40,7 +41,7 @@ function Nav() {
         <div className="container-fluid m-2">
           <a className="navbar-brand text-light" href="#" onClick={handleroot}>
             <FontAwesomeIcon icon={faTypo3} />
-            <span className="m-3"> AI4SEE </span>
+            <span className="m-3"> AI ClassRoom </span>
           </a>
           <button
             className="navbar-toggler"
@@ -61,22 +62,38 @@ function Nav() {
             <ul className="navbar-nav justify-content-between">
               <li className="nav-item">
                 <a
-                  className="nav-link text-light "
+                  className="nav-link text-light dropdown-toggle"
                   onClick={handleViewDetails}
                   href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  Home
+                  Courses
                 </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-light"
-                  href="#"
-                  onClick={handlefeature}
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
                 >
-                  Features
-                </a>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
               </li>
+
               <li className="nav-item">
                 <a
                   className="nav-link text-light"
@@ -92,7 +109,7 @@ function Nav() {
                   href="#"
                   onClick={handlecontact}
                 >
-                  Contact Us{" "}
+                  Register{" "}
                 </a>
               </li>
             </ul>

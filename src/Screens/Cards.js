@@ -21,6 +21,14 @@ function Cards(props) {
           >
             {p.domain}
           </button>
+          <img
+            class="card-img-top m-y img-fluid"
+            src={p.img}
+            width="300"
+            height="150"
+            alt="Card image cap"
+          />
+
           <div className="card-body">
             <h5 className="card-title  truncate title ml-3 ">{p.title}</h5>
             <p className="card-text duratioin card-text duration truncate">
@@ -52,7 +60,7 @@ function Cards(props) {
     }
   });
 
-  return <div className="container">{cardRows}</div>;
+  return <div className="container-fluid">{cardRows}</div>;
 }
 
 export default Cards;
