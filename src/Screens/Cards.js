@@ -32,7 +32,7 @@ function Cards(props) {
           <div className="card-body">
             <h5 className="card-title  truncate title ml-3 ">{p.title}</h5>
             <p className="card-text duratioin card-text duration truncate">
-              {p.duration}
+            Duration Of the Course: {p.duration}
             </p>
             <hr />
             <div className="d-flex flex-row-reverse">
