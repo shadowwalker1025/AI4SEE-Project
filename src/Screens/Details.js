@@ -36,7 +36,7 @@ function Details() {
           <img src={project.king} alt={project.title} />
         </div>
         <div className="jumbotron kool border-0 border-white rounded mt-2 shadow-lg">
-          {project.duration && <h2>{project.duration}</h2>}
+          {project.duration && <h2>{project.title}</h2>}
           <button
             className="btn btn-primary rounded-pill btn-lg px-5 my-2"
             onClick={handleRegistration}
@@ -49,6 +49,7 @@ function Details() {
               <h4 onClick={toggleOverview}>
                 <button className="btn btn-danger">Overview</button>
               </h4>
+              <br/>
               {showOverview && <p>{project.overview}</p>}
             </div>
             <div className="col-md-6">
@@ -56,11 +57,12 @@ function Details() {
                 {" "}
                 <button className="btn btn-danger">Curriculum</button>{" "}
               </h4>
+              <br/>
               {showCurriculum && (
                 <ul>
                   {project.Curriculum ? (
                     project.Curriculum.map((item, index) => (
-                      <li key={index}>{item}</li>
+                      <><li key={index}>{item}</li><br/></>
                     ))
                   ) : (
                     <li>No curriculum available.</li>
