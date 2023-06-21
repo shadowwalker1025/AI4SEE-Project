@@ -24,15 +24,14 @@ function Cards(props) {
           <img
             class="card-img-top m-y img-fluid"
             src={p.img}
-            width="300"
-            height="150"
+            style={{ width: "90%", height: 300, marginLeft: 25 }}
             alt="Card image cap"
           />
 
           <div className="card-body">
-            <h5 className="card-title  truncate title ml-3 ">{p.title}</h5>
+            <h5 className="card-title  truncate title ml-3 "><b>{p.title}</b></h5>
             <p className="card-text duratioin card-text duration truncate">
-            Duration Of the Course: {p.duration}
+            <b>Duration Of the Course:</b> {p.duration}
             </p>
             <hr />
             <div className="d-flex flex-row-reverse">

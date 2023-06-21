@@ -10,14 +10,14 @@ function Footer() {
       <div className="container mt-5 ">
         <div className="row">
           <div className="col-sm-4 ">
-            <div className="align-items-center justify-content-center p-2">
+            {/* <div className="align-items-center justify-content-center p-2">
               <FontAwesomeIcon icon={faTypo3} size="3x" />
-            </div>
+            </div> */}
             <p>
-              AI-Shala is an ed-tech platform where students and working
-              professional can learn skills essential to start a career in
+              AI-ClassRoom is an ed-tech platform where students and working
+              professionals can learn skills essential to start a career in
               Artificial Intelligence. Our aim is to provide training programs
-              to make you job ready. Our proud hiring partners believe our
+              to make your job ready. Our proud hiring partners believe in our
               training programs and consistently hire from us.
             </p>
           </div>
@@ -28,14 +28,14 @@ function Footer() {
               <a href="#">
                 <i className="fa fa-phone" aria-hidden="true"></i>
               </a>
-              <span className="m-2"> +91-9XXXXXXXXXXXXX</span>
+              <span className="m-2"> +91-8867583329</span>
             </div>
             <div>
               {" "}
               <a href="#">
                 <i className="fa fa-envelope " aria-hidden="true"></i>
               </a>
-              <span className="m-2"> email@gmail.com</span>
+              <span className="m-2"> basha.and.ai@ai4sees.com</span>
             </div>
             <div>
               {" "}
@@ -43,7 +43,7 @@ function Footer() {
                 <i className="fa fa-map" aria-hidden="true"></i>
               </a>
               <span className="m-2">
-                C-25B, Bhagwati Garden (Extn), Uttam Nagar, New Delhi-110059,
+                AI-ClassRoom Training Institute, White Field, Bangalore - 560048 ,
                 India
               </span>
             </div>

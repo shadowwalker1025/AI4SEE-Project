@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignInAlt, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+// import { faSignInAlt, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import { faTypo3 } from "@fortawesome/free-brands-svg-icons";
 
 function Nav() {
@@ -16,13 +16,13 @@ function Nav() {
     navigate("/");
   };
 
-  const handleSignIn = () => {
-    // Handle sign in logic
-  };
+  // const handleSignIn = () => {
+  //   // Handle sign in logic
+  // };
 
-  const handleSignOut = () => {
-    // Handle sign out logic
-  };
+  // const handleSignOut = () => {
+  //   // Handle sign out logic
+  // };
 
   const handlecontact = () => {
     navigate("/about/form");
@@ -37,9 +37,9 @@ function Nav() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-success">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light text-dark">
         <div className="container-fluid m-2">
-          <a className="navbar-brand text-light" href="#" onClick={handleroot}>
+          <a className="navbar-brand text-dark" href="#" onClick={handleroot}>
             <FontAwesomeIcon icon={faTypo3} />
             <span className="m-3"> AI ClassRoom </span>
           </a>
@@ -62,7 +62,7 @@ function Nav() {
             <ul className="navbar-nav justify-content-between">
               <li className="nav-item">
                 <a
-                  className="nav-link text-light dropdown-toggle"
+                  className="nav-link text-dark dropdown-toggle"
                   onClick={handleViewDetails}
                   href="#"
                   id="navbarDropdownMenuLink"
@@ -96,7 +96,7 @@ function Nav() {
 
               <li className="nav-item">
                 <a
-                  className="nav-link text-light"
+                  className="nav-link text-dark"
                   href="#"
                   onClick={handleabout}
                 >
@@ -105,7 +105,7 @@ function Nav() {
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link text-light"
+                  className="nav-link text-dark"
                   href="#"
                   onClick={handlecontact}
                 >
@@ -113,7 +113,7 @@ function Nav() {
                 </a>
               </li>
             </ul>
-            <ul className="navbar-nav ms-auto">
+            {/* <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <button className="btn btn-primary me-2" onClick={handleSignIn}>
                   <FontAwesomeIcon icon={faSignInAlt} /> Sign In
@@ -124,7 +124,7 @@ function Nav() {
                   <FontAwesomeIcon icon={faSignOutAlt} /> Sign Out
                 </button>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </nav>
